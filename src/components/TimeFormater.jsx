@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
-// import React from 'react'
-// import DateTime from './DateTime'
+
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
 
 
 // Рабочий вариант
-const DateTimePretty = (WrappedComponent) => {
+const TimeFormater = (WrappedComponent) => {
 
   // eslint-disable-next-line react/display-name
   return (props) => {
@@ -26,10 +25,8 @@ const DateTimePretty = (WrappedComponent) => {
       result = 'Ошибка в дате видео';
     }
 
-    return (<div>DateTimePretty 
-      <WrappedComponent {...props} date={result}/>
-    </div>)
+    return <WrappedComponent {...props} date={result}/> 
   }
 }
 
-export default DateTimePretty
+export default TimeFormater

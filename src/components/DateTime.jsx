@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 
-import DateTimePretty from "./DateTimePretty"
+import TimeFormater from "./TimeFormater"
 
 
 const DateTime = ({date}) => {
@@ -11,4 +11,5 @@ const DateTime = ({date}) => {
 }
 
 // export default DateTime
-export default DateTimePretty(DateTime);
+// export default DateTimePretty(DateTime);
+export const DateTimePretty = TimeFormater(DateTime);
