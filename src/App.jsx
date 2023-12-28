@@ -3,17 +3,19 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Videolist from './components/Videolist';
+// import logProps from './components/logProps';
+// import DateTime from './components/DateTime';
 
 function App() {
   // const [count, setCount] = useState(0)
   const [list] = useState([
     {
         url: 'https://www.youtube.com/embed/rN6nlNC9WQA?rel=0&amp;controls=0&amp;showinfo=0',
-        date: '2017-07-31 13:24:00'
+        date: '2023-12-28 02:54:00'
     },
     {
         url: 'https://www.youtube.com/embed/dVkK36KOcqs?rel=0&amp;controls=0&amp;showinfo=0',
-        date: '2018-03-03 12:10:00'
+        date: '2023-12-27 03:02:00'
     },
     {
         url: 'https://www.youtube.com/embed/xGRjCa49C6U?rel=0&amp;controls=0&amp;showinfo=0',
@@ -36,6 +38,7 @@ function App() {
   return (
     <>
       <Videolist list={list} />
+      {/* {logProps(<DateTime/>)} */}
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
